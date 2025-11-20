@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass rounded-3xl p-10 mt-20">
+  <h1 class="text-4xl font-bold mb-8 text-purple-400">{{ user.id_name }}</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+    <div><span class="text-gray-400">Age:</span> {{ user.age }}</div>
+    <div><span class="text-gray-400">Gender:</span> {{ user.gender }}</div>
+    <div><span class="text-gray-400">Profession:</span> {{ user.profession|default("—") }}</div>
+    <div><span class="text-gray-400">Hobby:</span> {{ user.hobby|default("—") }}</div>
+    <div class="md:col-span-2"><span class="text-gray-400">Credit Score:</span> <span class="text-2xl font-bold text-green-400">{{ user.credit_score }}</span></div>
+  </div>
+  <div class="mt-10 flex gap-4">
+    <a href="/delete/{{ username }}" class="px-8 py-4 bg-red-600 hover:bg-red-500 rounded-xl font-semibold">Delete User</a>
+    <a href="/update/{{ username }}" class="px-8 py-4 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold">Edit</a>
+    <a href="/" class="px-8 py-4 bg-gray-700 hover:bg-gray-600 rounded-xl font-semibold">← Home</a>
+  </div>
+</div>
+{% endblock %}

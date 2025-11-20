@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass rounded-3xl p-10 text-center mt-20">
+  <h2 class="text-4xl text-red-400 mb-8">Delete {{ username }}?</h2>
+  <form method="post" class="inline">
+    <button class="px-8 py-4 bg-red-600 hover:bg-red-500 rounded-xl font-bold text-xl">Yes, Delete Forever</button>
+  </form>
+  <a href="/" class="ml-6 px-8 py-4 bg-gray-700 rounded-xl">Cancel</a>
+</div>
+{% endblock %}
