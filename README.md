@@ -4,7 +4,8 @@
 
 Full-stack CRUD app with Pydantic validation & auto-delete if credit score < 100.
 
-**Live Demo:** (add Render/Fly.io link here)
+## Acknowledgments:
+- Frontend UI (Jinja2 templates + Tailwind styling) assisted by AI. All backend logic, routes, Pydantic models, and CRUD functionality written 100% by me.
 
 ## Features
 - Create / Read / Update / Delete users
